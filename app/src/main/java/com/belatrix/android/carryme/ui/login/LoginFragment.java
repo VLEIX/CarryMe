@@ -27,6 +27,16 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
     private Button btnSignUp;
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+//        Bundle args = getArguments();
+//        if (args != null) {
+//            user = (User) args.getSerializable(TAG_USER);
+//        }
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.login_fragment, container, false);
     }
@@ -36,7 +46,6 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
         super.onViewCreated(view, savedInstanceState);
 
         setViews(view);
-        getValues();
         setInitValues();
     }
 
@@ -76,13 +85,6 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
                 getPresenter().userDidClickSignUp();
             }
         });
-    }
-
-    private void getValues() {
-//        Bundle args = getArguments();
-//        if (args != null) {
-//            user = (User) args.getSerializable(TAG_USER);
-//        }
     }
 
     private void setInitValues() {
