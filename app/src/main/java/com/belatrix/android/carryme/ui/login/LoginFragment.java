@@ -1,6 +1,5 @@
 package com.belatrix.android.carryme.ui.login;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -36,7 +35,8 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        initViews(view);
+        setViews(view);
+        setInitValues();
     }
 
     @Override
@@ -44,7 +44,7 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
         return new LoginPresenter(this);
     }
 
-    private void initViews(View view) {
+    private void setViews(View view) {
         edtEmail = (EditText) view.findViewById(R.id.edtEmail);
         edtPassword = (EditText) view.findViewById(R.id.edtPassword);
         btnLogin = (Button) view.findViewById(R.id.btnLogin);
@@ -75,6 +75,9 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
                 getPresenter().userDidClickSignUp();
             }
         });
+    }
+
+    private void setInitValues() {
     }
 
     @Override
