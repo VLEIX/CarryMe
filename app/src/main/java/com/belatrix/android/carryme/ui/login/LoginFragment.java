@@ -42,29 +42,20 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        setViews(view);
-        setInitValues();
-    }
-
-    @Override
-    protected ILoginPresenter provideViewPresenter() {
-        return new LoginPresenter(this);
-    }
-
-    private void setViews(View view) {
         edtEmail = (EditText) view.findViewById(R.id.edtEmail);
         edtPassword = (EditText) view.findViewById(R.id.edtPassword);
         btnLogin = (Button) view.findViewById(R.id.btnLogin);
         btnLoginFacebook = (Button) view.findViewById(R.id.btnLoginFacebook);
         btnSignUp = (Button) view.findViewById(R.id.btnSignUp);
-
-        listeners();
     }
 
-    private void listeners() {
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +78,9 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
         });
     }
 
-    private void setInitValues() {
+    @Override
+    protected ILoginPresenter provideViewPresenter() {
+        return new LoginPresenter(this);
     }
 
     @Override
