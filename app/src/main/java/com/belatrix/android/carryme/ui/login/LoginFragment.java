@@ -36,6 +36,7 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
         super.onViewCreated(view, savedInstanceState);
 
         setViews(view);
+        getValues();
         setInitValues();
     }
 
@@ -75,6 +76,13 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
                 getPresenter().userDidClickSignUp();
             }
         });
+    }
+
+    private void getValues() {
+//        Bundle args = getArguments();
+//        if (args != null) {
+//            user = (User) args.getSerializable(TAG_USER);
+//        }
     }
 
     private void setInitValues() {
