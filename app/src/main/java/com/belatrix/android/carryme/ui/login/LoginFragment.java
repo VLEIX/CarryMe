@@ -56,6 +56,8 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        setInitValues();
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,6 +83,10 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
     @Override
     protected ILoginPresenter provideViewPresenter() {
         return new LoginPresenter(this);
+    }
+
+    private void setInitValues() {
+
     }
 
     @Override
