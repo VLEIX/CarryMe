@@ -1,0 +1,19 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Carry Me</string>
+
+    <!-- Common -->
+    <string name="lang.common.action.ok">Aceptar</string>
+    <string name="lang.common.action.cancel">Cancelar</string>
+
+    <!-- Login -->
+    <string name="lang.login.desc.imgLogo">Logo</string>
+    <string name="lang.login.hint.email">Correo</string>
+    <string name="lang.login.hint.password">Contraseña</string>
+    <string name="lang.login.button.login">Ingresar</string>
+    <string name="lang.login.button.loginFacebook">Ingresar con Facebook</string>
+    <string name="lang.login.button.signUp">¿No tienes usuario? ¡Regístrate!</string>
+    <string name="lang.login.message.emailEmpty">Ingrese su correo</string>
+    <string name="lang.login.message.emailInvalid">Ingrese un correo válido</string>
+    <string name="lang.login.message.passwordEmpty">Ingrese su contraseña</string>
+</resources>

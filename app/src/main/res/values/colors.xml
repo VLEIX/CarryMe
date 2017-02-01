@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#85d7f1</color>
+    <color name="colorPrimaryDark">#7ccae2</color>
+    <color name="colorPrimaryLight">#94def5</color>
+    <color name="colorAccent">#1B67BD</color>
+    <color name="colorAccentDark">#105CB3</color>
+    <color name="colorAccentLight">#3985DB</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">@android:color/white</color>
+    <color name="graySoft">#DDDDDD</color>
+    <color name="blueFacebook">#22579A</color>
+    <color name="blueFacebookLight">#2e71c6</color>
+    <color name="blueFacebookDark">#1c4374</color>
 </resources>
