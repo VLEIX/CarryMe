@@ -6,19 +6,27 @@
               android:background="@android:color/white"
               android:focusableInTouchMode="true"
               android:gravity="center"
-              android:orientation="vertical"
+              android:orientation="horizontal"
               android:padding="@dimen/activity_horizontal_margin"
               tools:context=".ui.login.LoginFragment">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="30dp"
         android:layout_weight="0.4"
         android:contentDescription="@string/lang.login.desc.imgLogo"
         android:scaleType="fitCenter"
         android:src="@drawable/logo_carry_me"/>
 
-    <include layout="@layout/login_form_content"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6">
+
+        <include
+            layout="@layout/login_form_content"/>
+    </FrameLayout>
 
 </LinearLayout>

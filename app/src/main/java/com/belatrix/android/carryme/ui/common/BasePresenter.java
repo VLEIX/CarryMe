@@ -26,5 +26,6 @@ public abstract class BasePresenter<V extends MVPView> implements MVPPresenter<V
 
     @Override
     public void viewDidDestroyed() {
+        view = null;
     }
 }
