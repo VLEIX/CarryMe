@@ -1,5 +1,6 @@
 package com.belatrix.android.carryme.ui.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 
 import com.belatrix.android.carryme.R;
 import com.belatrix.android.carryme.model.User;
+import com.belatrix.android.carryme.ui.client.ClientHomeActivity;
 import com.belatrix.android.carryme.ui.common.MVPFragment;
 import com.belatrix.android.carryme.util.Util;
 
@@ -91,9 +93,8 @@ public class LoginFragment extends MVPFragment<ILoginPresenter> implements ILogi
 
     @Override
     public void navigateToSignUp(User user) {
-//        Intent intent = new Intent(getContext(), SignUpActivity.class);
-//        intent.putExtra(TAG_USER, user);
-//        startActivity(intent);
+        Intent intent = new Intent(getContext(), ClientHomeActivity.class);
+        startActivity(intent);
     }
 
     @Override

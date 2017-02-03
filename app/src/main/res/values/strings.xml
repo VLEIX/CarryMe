@@ -5,6 +5,9 @@
     <!-- Common -->
     <string name="lang.common.action.ok">Ok</string>
     <string name="lang.common.action.cancel">Cancel</string>
+    <string name="lang.common.error">Error</string>
+
+    <string name="lang.common.error.google.places">Unable to open place selector</string>
 
     <!-- Login -->
     <string name="lang.login.desc.imgLogo">Logo</string>
@@ -16,4 +19,9 @@
     <string name="lang.login.message.emailEmpty">Enter your email</string>
     <string name="lang.login.message.emailInvalid">Enter a valid mail</string>
     <string name="lang.login.message.passwordEmpty">Enter your password</string>
+
+    <!-- Client -->
+    <string name="lang.client.hint.origin">Origin</string>
+    <string name="lang.client.hint.destination">Destination</string>
+
 </resources>
